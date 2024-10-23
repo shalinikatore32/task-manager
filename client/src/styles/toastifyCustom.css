@@ -1,0 +1,8 @@
+.Toastify__toast--custom {
+   background-color: none;
+   
+}
+
+.Toastify__progress-bar--custom {
+    background-color: #007bff; /* Custom progress bar color */
+}

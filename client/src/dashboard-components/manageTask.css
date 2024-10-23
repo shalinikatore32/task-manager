@@ -1,0 +1,174 @@
+/* Container styles */
+.manage-task-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Full width for smaller screens */
+  box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+/* Card styles with border */
+.task-card {
+  background-color: #ffffff;
+  border: 2px solid #007BFF; /* Add a solid border with color */
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+/* Heading styles */
+.manage-task-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+
+
+/* Card styles */
+.task-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Center the cards */
+}
+
+.task-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.task-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #007BFF;
+  font-family: 'Arial', sans-serif;
+}
+
+.task-description {
+  font-size: 14px;
+  color: #666;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; /* Adds three dots if the description is too long */
+}
+
+.task-date {
+  font-size: 12px;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 10px;
+}
+
+.task-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.edit-button,
+.delete-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Arial', sans-serif;
+  flex: 1;
+}
+
+.edit-button {
+  background-color: #28a745;
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+.edit-button:hover {
+  background-color: #218838;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+/* Modal styles (unchanged) */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 80%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.modal-content h3 {
+  margin-bottom: 15px;
+  font-family: 'Arial', sans-serif;
+}
+
+.modal-content input,
+.modal-content textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: 'Arial', sans-serif;
+}
+
+.save-button,
+.cancel-button {
+  padding: 8px 16px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Arial', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.save-button {
+  background-color: #007BFF;
+  color: #ffffff;
+}
+
+.cancel-button {
+  background-color: #6c757d;
+  color: #ffffff;
+}

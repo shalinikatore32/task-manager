@@ -1,0 +1,166 @@
+/* TeamPage Styles */
+.team-page {
+  padding: 20px;
+  background-color: #f8f9fa; /* Light background for the team page */
+}
+
+.team-page h2,
+.team-page h3,
+.team-page h4 {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  color: #333;
+}
+
+.team-page h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.team-page h3 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.team-page h4 {
+  font-size: 18px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.team-page input[type="text"],
+.team-page input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+.team-page input[type="text"]:focus,
+.team-page input[type="email"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.team-page button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.team-page button:hover {
+  background-color: #0056b3;
+}
+
+/* Team List Styling */
+.team-page ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.team-page ul li {
+  background-color: #fff;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.team-page ul li:hover {
+  background-color: #f1f1f1;
+}
+
+/* View Button Styling */
+.team-page ul li .view-button {
+  background-color: #28a745; /* Green background for view button */
+  color: white;
+  padding: 6px 12px; /* Consistent padding */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 14px; /* Consistent font size */
+  width: 90px; /* Set a fixed width */
+}
+
+.team-page ul li .view-button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Delete Button Styling */
+.team-page ul li .delete-button {
+  background-color: #dc3545; /* Red background for delete button */
+  color: white;
+  padding: 6px 12px; /* Adjusted padding for consistency */
+  border: none;
+  border-radius: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 14px; /* Consistent font size */
+  width: 90px; /* Set a fixed width */
+}
+
+.team-page ul li .delete-button:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+/* Modal Styling */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #f2eeee;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: red;
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 768px) {
+  .team-page ul li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .team-page ul li button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

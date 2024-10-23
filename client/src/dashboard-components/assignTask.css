@@ -1,0 +1,78 @@
+.assign-task-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #007bff;
+  font-family: 'Arial', sans-serif;
+}
+
+.assign-task-container h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #007bff;
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.assign-task-container select {
+  width: 100%;
+  padding: 12px 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+  color: #333;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.assign-task-container select:hover,
+.assign-task-container select:focus {
+  border-color: #007bff;
+}
+
+.assign-task-container button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.assign-task-container button:hover {
+  background-color: #0056b3;
+}
+
+.assign-task-container button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.assign-task-container option {
+  padding: 10px;
+}
+
+@media (max-width: 500px) {
+  .assign-task-container {
+    padding: 15px;
+  }
+
+  .assign-task-container h3 {
+    font-size: 1.5rem;
+  }
+
+  .assign-task-container select,
+  .assign-task-container button {
+    font-size: 0.9rem;
+  }
+}

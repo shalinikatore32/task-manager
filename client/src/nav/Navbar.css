@@ -1,0 +1,50 @@
+/* General navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo styling */
+.navbar-logo a {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Buttons container */
+.navbar-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+/* Button styling */
+.navbar-button {
+    padding: 10px 20px;
+    background: #fff;
+    color: #6a11cb;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.navbar-button:hover {
+    background: #6a11cb;
+    color: #fff;
+}
+
+.navbar-button:active {
+    background: #4c0c97;
+    color: #fff;
+    transform: scale(0.98);
+}

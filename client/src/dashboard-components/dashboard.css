@@ -1,0 +1,279 @@
+/* General Layout */
+.user-dashboard-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f0f4f8;
+  padding-top: 50px; /* Space for header */
+}
+
+/* Header Bar */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #0073e6, #005bb5);
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1002;
+  box-sizing: border-box;
+}
+
+/* Header Elements */
+.logo {
+  font-size: 22px; /* Increased font size */
+  font-weight: bold;
+}
+
+.user-profile {
+  font-size: 18px; /* Increased font size */
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Sidebar */
+.user-container {
+  background-color: #003f7f;
+  width: 240px;
+  height: calc(100vh - 50px); /* Adjust for header height */
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  position: fixed;
+  top: 50px; /* Adjust for header height */
+  left: 0;
+  transition: width 0.3s ease;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.user-container.closed {
+  width: 72px; /* Width when sidebar is collapsed */
+}
+
+/* dashboard.css */
+
+.notifications-tab {
+  background-color: white; /* Background color for the notifications */
+  padding: 10px;
+  border: 1px solid #ddd;
+  position: absolute; /* Positioning the notification box */
+  top: 60px; /* Adjust to position below the profile menu */
+  right: 0; /* Align to the right of the profile icon */
+  z-index: 1000; /* Ensure it appears above other content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.notifications-tab h4 {
+  margin: 0;
+}
+
+.notification-item {
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.notification-item:last-child {
+  border-bottom: none; /* Remove border for the last item */
+}
+
+.notification-item button {
+  margin-top: 5px;
+  background-color: #4caf50; /* Green color for accept button */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.notification-item button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+
+.user-container nav {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures content stays at the top and button stays at the bottom */
+}
+
+.user-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.user-container ul li {
+  margin: 0;
+}
+
+.user-container a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ddd;
+  padding: 12px;
+  font-size: 1.2rem; /* Increased font size */
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+  gap: 12px; /* Increased gap between icon and label */
+}
+
+.user-container a:hover {
+  background-color: #f1f1f1;
+}
+
+.user-container.closed a span:nth-child(2) {
+  display: none; /* Hide label when sidebar is collapsed */
+}
+
+.user-container.closed a {
+  justify-content: center;
+}
+
+/* Sidebar Toggle Button */
+.user-toggle-button {
+  position: fixed;
+  top: 60px;
+  left: 240px;
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 22px; /* Increased font size */
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1003;
+  transition: left 0.3s ease;
+}
+
+.user-dashboard-container.sidebar-closed .user-toggle-button {
+  left: 72px; /* Adjust button position when sidebar is collapsed */
+}
+
+/* Content Area */
+.user-content {
+  margin-left: 240px;
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #f5f5f5;
+  transition: margin-left 0.3s ease;
+}
+
+.user-dashboard-container.sidebar-closed .user-content {
+  margin-left: 72px; /* Adjust content margin when sidebar is collapsed */
+}
+
+/* Profile Menu */
+.profile-icon {
+  font-size: 42px; /* Increased font size */
+  margin-right: 10px;
+}
+
+.profile-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 35px; /* Adjust to fit below the profile icon */
+  right: 0px;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  border: 2px solid rgb(72, 140, 211);
+  padding: 10px;
+  z-index: 1003;
+  min-width: 150px;
+}
+
+/* Add styles for the Assign Task button */
+.assign-task-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Sidebar Assign Task Button at the Bottom */
+.assign-task-button-container {
+  position: absolute;
+  bottom: 20px; /* Pushes the button to the bottom */
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+}
+
+.assign-task-button {
+  padding: 12px 24px;
+  background-color: #28a745; /* Green color to make it stand out */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 90%; /* Makes the button match the sidebar width */
+}
+
+.assign-task-button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+.profile-menu a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  display: block;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 1.1rem; /* Increased font size */
+}
+
+.profile-menu a:hover {
+  background-color: #0073e6;
+  color: #fff;
+}
+
+/* Sidebar Links */
+.user-container a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ddd;
+  padding: 10px 20px;
+  font-size: 1.2rem; /* Increased font size */
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+  gap: 12px; /* Increased gap between icon and label */
+}
+
+.user-container a:hover {
+  background-color: #003f7f;
+  color: #ffcc00;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .user-container {
+    width: 72px;
+  }
+  
+  .user-content {
+    margin-left: 72px;
+  }
+
+  .user-toggle-button {
+    left: 72px;
+  }
+}

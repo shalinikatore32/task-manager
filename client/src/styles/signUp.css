@@ -1,0 +1,134 @@
+/* Container and form wrapper */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f3f4f6, #d1d8e0);
+    position: relative; /* For spinner overlay positioning */
+}
+
+.signup-container.blurred {
+    filter: blur(0.01px); /* Apply a smaller blur effect when loading */
+}
+
+.signup-form-wrapper {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 800px; /* Increased width for two columns */
+    text-align: center;
+}
+
+/* Form header */
+.signup-form-wrapper h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+/* Form styling */
+.signup-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between columns */
+}
+
+/* Form groups for two-column layout */
+.signup-form-group {
+    flex: 1 1 calc(50% - 20px); /* Two columns with spacing */
+    margin-bottom: 20px;
+    min-width: 0; /* Allows columns to shrink properly */
+}
+
+.signup-form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #000 !important; /* Add !important to override other styles */
+}
+
+.signup-form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box; /* Ensures padding and border are included in width */
+}
+
+.signup-form-group input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.2);
+}
+
+/* Submit button */
+.signup-button {
+    background: #007bff;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    margin-top: 20px; /* Space above button */
+}
+
+.signup-button:hover {
+    background: #0056b3;
+    transform: scale(1.02);
+}
+
+.signup-button:active {
+    background: #00408b;
+}
+
+/* Link to login page */
+.login-link {
+    margin-top: 20px;
+    color: #333;
+    font-size: 20px; /* Increased font size for better visibility */
+}
+
+.login-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Spinner overlay */
+.spinner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    z-index: 1000; /* Ensure it's on top */
+}
+
+/* Loader styles */
+.loader {
+    border: 4px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 4px solid #3498db;
+    width: 30px; /* Increased size */
+    height: 30px; /* Increased size */
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

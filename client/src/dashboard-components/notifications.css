@@ -1,0 +1,73 @@
+/* Container for the notifications list */
+.notifications-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title of the notifications section */
+  .notifications-container h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+  }
+  
+  /* Individual notification items */
+  .notification-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease;
+  }
+  
+  .notification-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Notification message content */
+  .notification-message {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Time when the notification was created */
+  .notification-time {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  /* Empty notification message */
+  .no-notifications {
+    text-align: center;
+    font-size: 18px;
+    color: #999;
+    margin-top: 20px;
+  }
+  
+  /* Button for accepting invitations */
+  .notification-actions button {
+    padding: 8px 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .notification-actions button:hover {
+    background-color: #218838;
+  }
+  

@@ -1,0 +1,136 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Container */
+.login-signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+/* Form Wrapper */
+.form-wrapper {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 10px 15px;
+  border: none;
+  background: #f4f4f4;
+  cursor: pointer;
+  transition: background 0.3s;
+  border-radius: 4px;
+  flex: 1; /* Ensures equal space for tabs */
+  text-align: center;
+}
+
+.tab.active {
+  background: #007bff;
+  color: white;
+}
+
+/* Form Styles */
+.login-signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align the form content */
+}
+
+.form-group {
+  margin-bottom: 15px; /* Space between input fields */
+  width: 100%; /* Ensures full width of the input fields */
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-align: left; /* Align label text to the left */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box; /* Prevents padding from affecting width */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Buttons */
+.submit-button {
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%; /* Full width button */
+  margin-top: 10px; /* Space above the button */
+}
+
+.submit-button:hover {
+  background: #0056b3;
+}
+
+/* Loader */
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Signup Grid */
+.signup-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Default to single column */
+  gap: 10px; /* Space between grid items */
+}
+
+/* Heading */
+h2 {
+  text-align: center; /* Center align the heading */
+  width: 100%; /* Ensures heading is full width */
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center; /* Center the button horizontally */
+  width: 100%; /* Full width for button wrapper */
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
+  .signup-grid {
+      grid-template-columns: repeat(2, 1fr); /* Two columns on wider screens */
+  }
+}

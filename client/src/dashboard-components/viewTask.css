@@ -1,0 +1,64 @@
+/* Container for the view task component */
+.view-task-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f0f4f8; /* Light blue background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.view-task-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Container for task cards */
+.task-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  
+  justify-content: center;
+}
+
+/* Individual task card */
+.task-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 300px;
+  flex: 1;
+}
+
+/* Task card header */
+.task-card h3 {
+  margin-top: 0;
+}
+
+/* Task card content */
+.task-card p {
+  margin: 10px 0;
+}
+
+/* Back button */
+.back-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #0073e6;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.back-button:hover {
+  background-color: #005bb5;
+}

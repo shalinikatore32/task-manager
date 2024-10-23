@@ -1,0 +1,68 @@
+.create-task-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #e3f2fd; /* Light blue background for the form */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.create-task-container h2 {
+  text-align: center;
+  color: #0277bd; /* Darker blue for header text */
+  margin-bottom: 20px;
+}
+
+.create-task-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #0277bd; /* Darker blue for labels */
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #90caf9; /* Light blue border color */
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff; /* White background for input fields */
+}
+
+.form-group input {
+  height: 40px;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.submit-button {
+  background-color: #0277bd; /* Darker blue for the button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #01579b; /* Even darker blue for hover effect */
+}
+
+.submit-button:active {
+  background-color: #003c8f; /* Darkest blue for active state */
+  color: #fff;
+  transform: scale(0.98);
+}
