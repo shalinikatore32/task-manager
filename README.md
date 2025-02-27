@@ -4,11 +4,11 @@
 
 1. Clone the repository:
 ```
-git clone https://github.com/your-username/your-project.git
+git clone https://github.com/shalinikatore32/REPO_NAME.git
 ```
 2. Navigate to the project directory:
 ```
-cd your-project
+cd REPO_NAME
 ```
 3. Install the dependencies:
 ```
